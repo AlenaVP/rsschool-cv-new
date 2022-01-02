@@ -7,9 +7,14 @@ body {
   background-color: #fff;
 }
 
-div.main {
+.main {
   margin: auto;
   width: 60%;
+}
+
+.align-right {
+  float: right;
+  margin-left: 10px;
 }
 
 code {
