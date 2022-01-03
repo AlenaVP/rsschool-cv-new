@@ -1,4 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: auto;
+  width: 60%;
   font-family: "Maven Pro", "Quicksand", "Manrope", "Catamaran", "Arial Narrow",
     Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -7,13 +13,102 @@ body {
   background-color: #fff;
 }
 
-div.main {
-  margin: auto;
-  width: 60%;
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+  display: block;
+  margin: 1em 0 1em 1.25em;
+  transition: 0.1s;
+}
+
+nav a:hover {
+  font-size: 1.25em;
+  color: #8e5c4a;
+}
+
+nav li:nth-child(1) > a:hover {
+  margin: 0.65em -0.25em 0.65em 0.75em;
+}
+
+nav li:nth-child(2) > a:hover {
+  margin: 0.65em -0.25em 0.65em 0.65em;
+}
+
+nav li:nth-child(3) > a:hover {
+  margin: 0.65em -0.6em 0.65em 0.45em;
+}
+
+nav li:nth-child(4) > a:hover {
+  margin: 0.65em -0.55em 0.65em 0.46em;
+}
+
+nav li:nth-child(5) > a:hover {
+  margin: 0.65em -0.5em 0.65em 0.53em;
+}
+
+.align-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.soaring {
+  border-radius: 17%;
+  box-shadow: 17px 17px 17px 8px rgb(0 0 0 / 35%);
 }
 
 code {
   display: block;
   background-color: #efefef;
   font-size: 0.75em;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  box-sizing: border-box;
+  padding: 1em;
+  max-width: 33%;
+  border-radius: 5px;
+  background: #efefef;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project > div {
+  flex: 1;
+}
+
+.project h5 {
+  text-transform: capitalize;
+}
+
+.logo img {
+  width: 80px;
+  height: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  padding: 10px;
+  background-color: #efefef;
+  box-shadow: inset 0 0 10px #777;
 }
