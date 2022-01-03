@@ -73,6 +73,31 @@ code {
   font-size: 0.75em;
 }
 
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  box-sizing: border-box;
+  padding: 1em;
+  max-width: 33%;
+  border-radius: 5px;
+  background: #efefef;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project > div {
+  flex: 1;
+}
+
+.project h5 {
+  text-transform: capitalize;
+}
+
 .logo img {
   width: 80px;
   height: 30px;
